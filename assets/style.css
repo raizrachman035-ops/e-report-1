@@ -24,6 +24,14 @@ section {
      background-color: rgba(0, 0, 0, 0.3);
 }
 
+footer {
+     margin-top: 100px;
+     padding-bottom: 20px;
+}
+
+.copyright {
+     margin-top: 30px;
+}
  
 @media screen and (max-width:510px) {
      .hero .col img {
