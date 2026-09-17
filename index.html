@@ -29,10 +29,19 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <!-- cdn animate style -->
+     <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+  <!-- cdn aos css -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg bg-primary-subtle py-4">
+    <nav class="animate__animated animate__fadeInDown animate__delay-1 navbar navbar-expand-lg bg-primary-subtle py-4">
       <div class="container">
         <a class="navbar-brand" href="#">
           <img
@@ -60,21 +69,21 @@
               <a
                 class="nav-link text-primary active"
                 aria-current="page"
-                href="#"
+                href="#hero"
                 >Home</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link text-primary" href="#">About</a>
+              <a class="nav-link text-primary" href="#About">About</a>
             </li>
             <li class="nav-item tex">
-              <a class="nav-link text-primary" href="#">Services</a>
+              <a class="nav-link text-primary" href="#service">Services</a>
             </li>
             <li class="nav-item tex">
-              <a class="nav-link text-primary" href="#">Recent</a>
+              <a class="nav-link text-primary" href="#Recent">Recent</a>
             </li>
             <li class="nav-item tex">
-              <a class="nav-link text-primary" href="#">FAQ</a>
+              <a class="nav-link text-primary" href="#faq">FAQ</a>
             </li>
           </ul>
         </div>
@@ -87,7 +96,7 @@
         <div
           class="hero row flex-nowrap flex-column flex-lg-row align-item-center text-center justify-content-center text-lg-start gap-5"
         >
-          <div class="col">
+          <div class="col animate__animated animate__backInLeft animate__delay-1s">
             <h1 class="fw-bold">
               Selamat datang <br />
               di
@@ -105,7 +114,7 @@
               <a class="btn btn-outline-primary" href="">Let's Start</a>
             </div>
           </div>
-          <div class="col d-flex justify-content-center justify-content-lg-end">
+          <div class="col animate__animated animate__fadeInRight animate__delay-2s d-flex justify-content-center justify-content-lg-end">
             <img src="./assets/images/hero section.png" alt="" />
           </div>
         </div>
@@ -117,14 +126,14 @@
       <div class="container">
         <div class="about row">
           <div class="col text-center">
-            <h1 class="text-primary fw-bold mb-4">About Us</h1>
-            <p>
+            <h1 data-aos="fade-up" class="text-primary fw-bold mb-4">About Us</h1>
+            <p data-aos="fade-up" data-aos-delay="300">
               IDN E-Report hadir sebagai wadah komunikasi digital yang
               menghubungkan civitas IDN dengan pihak pengelola. Kami memproses
               setiap laporan akademik, fasilitas, dan pengaduan rahasia secara
               profesional dan transparan demi perbaikan berkelanjutan.
             </p>
-            <img src="./assets/images/abaou.png" alt="foto  team" />
+            <img data-aos="fade-up" data-aos-delay="500" src="./assets/images/abaou.png" alt="foto  team" />
           </div>
         </div>
       </div>
@@ -134,8 +143,8 @@
     <section id="service" class="p-3 p-lg-0">
       <div class="container">
         <div>
-          <h1 class="fw-bold text-primary">Layanan kami</h1>
-          <p class="lh-lg">
+          <h1 data-aos="fade-up" data-aos-delay="300" class="fw-bold text-primary">Layanan kami</h1>
+          <p data-aos="fade-up" data-aos-delay="500" class="lh-lg">
             E-Report IDN menghadirkan sistem pelaporan digital yang aman,
             transparan, dan terintegrasi. Kami siap menampung serta
             menindaklanjuti setiap aspirasi, keluhan, maupun masukan demi
@@ -143,7 +152,7 @@
           </p>
         </div>
         <div class="row service mt-5 gap-4">
-          <div class="col bg-primary-subtle pt-4 rounded text-primary-emphasis">
+          <div data-aos="fade-up" data-aos-delay="500" class="col bg-primary-subtle pt-4 rounded text-primary-emphasis">
             <div class="d-flex gap-3 align-item-center mb-2">
               <i class="fa-solid fa-graduation-cap fs-5"></i>
               <h4 class="fw-semibold mb-0">Pengaduan Akademik</h4>
@@ -153,7 +162,7 @@
               secara langsung.
             </p>
           </div>
-          <div class="col bg-primary-subtle pt-4 rounded text-primary-emphasis">
+          <div data-aos="fade-up" data-aos-delay="600" class="col bg-primary-subtle pt-4 rounded text-primary-emphasis">
             <div class="d-flex gap-3 align-item-center mb-2">
               <i class="fa-solid fa-screwdriver-wrench fs-5"></i>
               <h4 class="fw-semibold mb-0">Pengaduan Fasilitas</h4>
@@ -163,7 +172,7 @@
               diperbaiki.
             </p>
           </div>
-          <div class="col bg-primary-subtle pt-4 rounded text-primary-emphasis">
+          <div data-aos="fade-up" data-aos-delay="700" class="col bg-primary-subtle pt-4 rounded text-primary-emphasis">
             <div class="d-flex gap-3 align-item-center mb-2">
               <i class="fa-solid fa-user-secret fs-5"></i>
               <h4 class="fw-semibold mb-0">Pengaduan Anonymous</h4>
@@ -181,15 +190,15 @@
     <section id="Recent">
       <div class="container">
         <div class="text-end mb-5">
-          <h1 class="fw-bold text-primary">Laporan Terbaru</h1>
-          <p class="lh-lg">
+          <h1 data-aos="fade-up" class="fw-bold text-primary">Laporan Terbaru</h1>
+          <p data-aos="fade-up" data-aos-delay="300" class="lh-lg">
             aftar laporan dan aspirasi terkini yang telah masuk ke dalam sistem.
             Temukan informasi pembaruan status penanganan yang sedang diproses
             oleh tim E-Report IDN secara real-time.
           </p>
         </div>
         <div class="row">
-          <div class="col-lg-4 col-md-6 mb-4">
+          <div data-aos="fade-up" data-aos-delay="700" class="col-lg-4 col-md-6 mb-4">
             <div class="card">
               <div class="kategori position-absolute px-3 py-2">
                 <a class="text-white text-decoration-none" href="">Fasilitas</a>
@@ -214,7 +223,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 mb-4">
+          <div data-aos="fade-up" data-aos-delay="600" class="col-lg-4 col-md-6 mb-4">
             <div class="card">
               <div class="kategori position-absolute px-3 py-2">
                 <a class="text-white text-decoration-none" href="">Fasilitas</a>
@@ -237,7 +246,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 mb-4">
+          <div data-aos="fade-up" data-aos-delay="500" class="col-lg-4 col-md-6 mb-4">
             <div class="card">
               <div class="kategori position-absolute px-3 py-2">
                 <a class="text-white text-decoration-none" href="">Fasilitas</a>
@@ -268,11 +277,11 @@
     <section class="py-5 mt-5" id="faq">
         <div class="container">
             <div class="row text-center">
-                <h1 class="fw-bold text-primary">FAQ</h1>
-                <p class="lh-lg">Berikut adalah kumpulan pertanyaan yang paling sering diajukan seputar penggunaan dan fitur-fitur di dalam aplikasi e-Report. Kami telah merangkum panduan ini untuk membantu Anda menemukan jawaban dengan cepat. Apabila Anda tidak menemukan jawaban atas pertanyaan yang dicari, jangan ragu untuk menghubungi tim support kami yang siap membantu Anda kapan saja.</p>
+                <h1 data-aos="fade-up" class="fw-bold text-primary">FAQ</h1>
+                <p data-aos="fade-up" data-aos-delay="300" class="lh-lg">Berikut adalah kumpulan pertanyaan yang paling sering diajukan seputar penggunaan dan fitur-fitur di dalam aplikasi e-Report. Kami telah merangkum panduan ini untuk membantu Anda menemukan jawaban dengan cepat. Apabila Anda tidak menemukan jawaban atas pertanyaan yang dicari, jangan ragu untuk menghubungi tim support kami yang siap membantu Anda kapan saja.</p>
             </div>
             <div class="accordion" id="accordionExample">
-                <div class="row row-cols-1 row-cols-md-2 mt-5 g-4">
+                <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" class="row row-cols-1 row-cols-md-2 mt-5 g-4">
                     <div class="col">
                         <div class="accordion-item ">
                             <h2 class="accordion-header">
@@ -386,11 +395,11 @@
           </div>
           <div class="col-md-2 text-primary d-flex flex-column gap-2">
             <h4 class="fw-bold mb-2">Menu</h4>
-            <a class="text-decoration-none opacity-75" href="">Home</a>
-            <a class="text-decoration-none opacity-75" href="">About</a>
-            <a class="text-decoration-none opacity-75" href="">Service</a>
-            <a class="text-decoration-none opacity-75" href="">Recents</a>
-            <a class="text-decoration-none opacity-75" href="">FAQ</a>
+            <a class="text-decoration-none opacity-75" href="#hero">Home</a>
+            <a class="text-decoration-none opacity-75" href="#About">About</a>
+            <a class="text-decoration-none opacity-75" href="#service">Service</a>
+            <a class="text-decoration-none opacity-75" href="#Recent">Recents</a>
+            <a class="text-decoration-none opacity-75" href="#faq">FAQ</a>
           </div>
           <div class="col-md-4 text-primary d-flex flex-column gap-2">
             <h4 class="fw-bold mb-2">Contact Us</h4>
@@ -398,11 +407,11 @@
               <i class="fa-solid fa-envelope"></i>
               IDN E-Report@gmail.com
             </a>
-            <a class=" d-flex align-items-center gap-3 text-decoration-none opacity-75" href="">
+            <a target="_blank" class=" d-flex align-items-center gap-3 text-decoration-none opacity-75" href="https://wa.me087688579035">
               <i class="fa-brands fa-square-whatsapp"></i>
               +62 87688579035
             </a>
-            <a class=" d-flex align-items-center gap-3 text-decoration-none opacity-75" href="">
+            <a class=" d-flex align-items-center gap-3 text-decoration-none opacity-75" href="https://maps.app.goo.gl/UmWWE4W1KmAoBgdd8">
               <i class="fa-solid fa-location-dot"></i>
               Jl.al ikhlas bekasi utara kota bekasi
             </a>
@@ -426,5 +435,11 @@
       integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
       crossorigin="anonymous"
     ></script>
+
+    <!-- js aos -->
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     <script>
+        AOS.init();
+     </script>
   </body>
 </html>
