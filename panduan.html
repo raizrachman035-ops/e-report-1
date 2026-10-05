@@ -1,0 +1,639 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Panduan Pengguna | IDN E-Report</title>
+    <meta
+      name="description"
+      content="Panduan ringkas dan jelas cara menggunakan aplikasi IDN E-Report untuk membuat laporan, memfilter informasi, dan memantau status pengaduan."
+    />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/WhatsApp_Image_2026-07-24_at_14.22.43__1_-removebg-preview.png"
+      type="image/x-icon"
+    />
+
+    <!-- css bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <!-- my css -->
+    <link rel="stylesheet" href="./assets/style.css" />
+
+    <!-- cdn font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+      integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- cdn animate style -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- cdn aos css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- navbar -->
+  <nav class="animate__animated animate__fadeInDown animate__delay-1 navbar navbar-expand-lg bg-primary-subtle py-4">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="./assets/images/WhatsApp_Image_2026-07-24_at_14.22.43__1_-removebg-preview.png"
+            alt="Logo"
+            width="30"
+            class="d-inline-block align-text-top rounded"
+          />
+          <span class="fw-bold text-primary"> IDN E-Report</span>
+        </a>
+        <button
+          class="navbar-toggler shadow-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto gap-4 pt-4 text-center pt-lg-0 fw-bold">
+            <li class="nav-item">
+              <a
+                class="nav-link text-primary active"
+                aria-current="page"
+                href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-primary" href="index.html#About">About</a>
+            </li>
+            <li class="nav-item tex">
+              <a class="nav-link text-primary" href="index.html#service">Services</a>
+            </li>
+            <li class="nav-item tex">
+              <a class="nav-link text-primary" href="index.html#Recent">Recent</a>
+            </li>
+            <li class="nav-item tex">
+              <a class="nav-link text-primary" href="index.html#faq">FAQ</a>
+            </li>
+            <li class="nav-item tex">
+              <a class="nav-link text-primary" href="panduan.html">Guide</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header / Hero Section -->
+    <header class="bg-light border-bottom py-5">
+      <div class="container py-3">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb mb-3">
+            <li class="breadcrumb-item">
+              <a class="text-decoration-none" href="index.html">Beranda</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">Panduan Pengguna</li>
+          </ol>
+        </nav>
+        <div class="row align-items-center g-4">
+          <div class="col-lg-8 animate__animated animate__fadeInLeft">
+            <div class="guide-badge bg-primary-subtle text-primary mb-3">
+              <i class="fa-solid fa-book-open"></i> Pusat Bantuan & Edukasi
+            </div>
+            <h1 class="fw-bold text-primary mb-3 display-6">
+              Panduan Pengguna Aplikasi IDN E-Report
+            </h1>
+            <p class="text-secondary lh-lg mb-4 fs-6">
+              Selamat datang di pusat panduan resmi <strong>IDN E-Report</strong>. Halaman ini
+              dirancang sederhana dan praktis untuk membantu seluruh civitas IDN memahami cara
+              menyampaikan pengaduan, memantau proses tindak lanjut, dan memanfaatkan seluruh fitur
+              sistem secara transparan.
+            </p>
+            <div class="d-flex flex-wrap gap-2">
+              <a href="#langkah" class="btn btn-primary px-4 py-2">
+                <i class="fa-solid fa-play me-1"></i> 4 Langkah Melapor
+              </a>
+              <a href="#accordionPanduan" class="btn btn-outline-primary px-4 py-2">
+                <i class="fa-solid fa-circle-question me-1"></i> Tanya Jawab Fitur
+              </a>
+              <a href="reports.html" class="btn btn-light border px-4 py-2 text-primary fw-semibold">
+                <i class="fa-solid fa-plus me-1"></i> Buat Laporan
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-4 text-center d-none d-lg-block animate__animated animate__fadeInRight">
+            <div class="p-4 bg-white rounded-4 shadow-sm border border-primary-subtle">
+              <i class="fa-solid fa-bullhorn text-primary fa-4x mb-3"></i>
+              <h5 class="fw-bold text-primary">Sampaikan Suara Anda</h5>
+              <p class="text-muted small mb-0">
+                Laporan Anda membantu perbaikan fasilitas dan peningkatan kenyamanan belajar bersama di IDN.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Konten Utama -->
+    <main>
+      <!-- Section 1: 4 Langkah Mudah Melapor -->
+      <section id="langkah" class="py-5">
+        <div class="container">
+          <div class="text-center mb-5" data-aos="fade-up">
+            <span class="text-primary fw-bold text-uppercase small tracking-wide">Alur Praktis</span>
+            <h2 class="fw-bold text-primary-emphasis mt-1">4 Langkah Mudah Membuat Laporan</h2>
+            <p class="text-secondary col-md-8 mx-auto">
+              Ikuti alur sederhana di bawah ini untuk mengirimkan keluhan atau masukan Anda ke tim pengelola IDN.
+            </p>
+          </div>
+
+          <div class="row g-4">
+            <!-- Langkah 1 -->
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+              <div class="card h-100 border-0 shadow-sm step-card p-4">
+                <div class="d-flex align-items-center justify-content-between mb-3">
+                  <span class="step-number bg-primary text-white">1</span>
+                  <i class="fa-solid fa-list-ul text-primary fs-3 opacity-75"></i>
+                </div>
+                <h5 class="fw-bold text-primary">Buka Menu Laporan</h5>
+                <p class="text-secondary small lh-base mb-0">
+                  Kunjungi menu <strong>Semua Laporan</strong> di navbar. Anda dapat mengecek apakah masalah serupa sudah pernah dilaporkan oleh rekan lain.
+                </p>
+              </div>
+            </div>
+
+            <!-- Langkah 2 -->
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+              <div class="card h-100 border-0 shadow-sm step-card p-4">
+                <div class="d-flex align-items-center justify-content-between mb-3">
+                  <span class="step-number bg-primary text-white">2</span>
+                  <i class="fa-solid fa-square-plus text-primary fs-3 opacity-75"></i>
+                </div>
+                <h5 class="fw-bold text-primary">Klik Tambah Laporan</h5>
+                <p class="text-secondary small lh-base mb-0">
+                  Tekan tombol biru <strong>+ Tambah Laporan</strong> di bagian atas daftar untuk memunculkan formulir pelaporan digital.
+                </p>
+              </div>
+            </div>
+
+            <!-- Langkah 3 -->
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+              <div class="card h-100 border-0 shadow-sm step-card p-4">
+                <div class="d-flex align-items-center justify-content-between mb-3">
+                  <span class="step-number bg-primary text-white">3</span>
+                  <i class="fa-solid fa-pen-fancy text-primary fs-3 opacity-75"></i>
+                </div>
+                <h5 class="fw-bold text-primary">Lengkapi Formulir</h5>
+                <p class="text-secondary small lh-base mb-0">
+                  Isi judul laporan, pilih kategori yang sesuai, jelaskan kronologi dengan jelas, serta lampirkan foto bukti kondisi nyata.
+                </p>
+              </div>
+            </div>
+
+            <!-- Langkah 4 -->
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+              <div class="card h-100 border-0 shadow-sm step-card p-4">
+                <div class="d-flex align-items-center justify-content-between mb-3">
+                  <span class="step-number bg-primary text-white">4</span>
+                  <i class="fa-solid fa-paper-plane text-primary fs-3 opacity-75"></i>
+                </div>
+                <h5 class="fw-bold text-primary">Kirim & Pantau</h5>
+                <p class="text-secondary small lh-base mb-0">
+                  Klik <strong>Kirim Laporan</strong>. Tim akan memverifikasi dan memproses laporan dalam 1–3 hari kerja hingga selesai.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 2: Panduan Kategori Laporan -->
+      <section class="py-5 bg-light border-top border-bottom">
+        <div class="container">
+          <div class="text-center mb-5" data-aos="fade-up">
+            <span class="text-primary fw-bold text-uppercase small tracking-wide">Kenali Jenis Pengaduan</span>
+            <h2 class="fw-bold text-primary-emphasis mt-1">3 Kategori Pengaduan di IDN E-Report</h2>
+            <p class="text-secondary col-md-8 mx-auto">
+              Pilih kategori yang tepat saat mengisi formulir agar laporan langsung diteruskan ke divisi terkait.
+            </p>
+          </div>
+
+          <div class="row g-4">
+            <!-- Akademik -->
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+              <div class="card h-100 border-0 shadow-sm p-4 bg-white rounded-4">
+                <div class="d-flex align-items-center gap-3 mb-3">
+                  <div class="bg-primary-subtle text-primary p-3 rounded-circle">
+                    <i class="fa-solid fa-graduation-cap fs-4"></i>
+                  </div>
+                  <div>
+                    <h5 class="fw-bold text-primary mb-0">Akademik</h5>
+                    <small class="text-muted">Proses Pembelajaran</small>
+                  </div>
+                </div>
+                <p class="text-secondary small lh-lg mb-3">
+                  Ditujukan untuk kendala seputar materi pelajaran, jadwal kelas, remedial, kurikulum, absensi, maupun layanan bimbingan belajar.
+                </p>
+                <div class="mt-auto">
+                  <span class="badge bg-primary-subtle text-primary border border-primary-subtle">
+                    Contoh: Jadwal kelas bentrok, modul belum diterima
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Fasilitas -->
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+              <div class="card h-100 border-0 shadow-sm p-4 bg-white rounded-4">
+                <div class="d-flex align-items-center gap-3 mb-3">
+                  <div class="bg-primary-subtle text-primary p-3 rounded-circle">
+                    <i class="fa-solid fa-screwdriver-wrench fs-4"></i>
+                  </div>
+                  <div>
+                    <h5 class="fw-bold text-primary mb-0">Fasilitas</h5>
+                    <small class="text-muted">Sarana & Prasarana</small>
+                  </div>
+                </div>
+                <p class="text-secondary small lh-lg mb-3">
+                  Ditujukan untuk melaporkan sarana rusak seperti AC tidak dingin, meja/kursi rusak, lampu mati, toilet kotor, proyektor mati, atau fasilitas umum lainnya.
+                </p>
+                <div class="mt-auto">
+                  <span class="badge bg-primary-subtle text-primary border border-primary-subtle">
+                    Contoh: AC kelas panas, meja rusak, lampu putus
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Anonymous -->
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+              <div class="card h-100 border-0 shadow-sm p-4 bg-white rounded-4">
+                <div class="d-flex align-items-center gap-3 mb-3">
+                  <div class="bg-primary-subtle text-primary p-3 rounded-circle">
+                    <i class="fa-solid fa-user-secret fs-4"></i>
+                  </div>
+                  <div>
+                    <h5 class="fw-bold text-primary mb-0">Anonymous</h5>
+                    <small class="text-muted">Pengaduan Rahasia</small>
+                  </div>
+                </div>
+                <p class="text-secondary small lh-lg mb-3">
+                  Gunakan opsi ini jika Anda ingin menyampaikan laporan sensitif tanpa mencantumkan identitas pribadi. Privasi dan kerahasiaan Anda dijamin aman.
+                </p>
+                <div class="mt-auto">
+                  <span class="badge bg-primary-subtle text-primary border border-primary-subtle">
+                    Identitas pelapor dirahasiakan sepenuhnya
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 3: Detail Panduan & FAQ Interaktif -->
+      <section class="py-5">
+        <div class="container">
+          <div class="text-center mb-5" data-aos="fade-up">
+            <span class="text-primary fw-bold text-uppercase small tracking-wide">Instruksi Lengkap</span>
+            <h2 class="fw-bold text-primary-emphasis mt-1">Panduan Penggunaan Fitur Aplikasi</h2>
+            <p class="text-secondary col-md-8 mx-auto">
+              Klik setiap pertanyaan di bawah ini untuk membaca penjelasan langkah demi langkah secara mendalam.
+            </p>
+          </div>
+
+          <div class="row justify-content-center">
+            <div class="col-lg-10" data-aos="fade-up" data-aos-delay="200">
+              <div class="accordion guide-accordion" id="accordionPanduan">
+                <!-- Item 1: Cara membuat laporan -->
+                <div class="accordion-item shadow-sm">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                      <i class="fa-solid fa-circle-plus text-primary me-2"></i>
+                      Bagaimana cara membuat laporan baru?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseOne"
+                    class="accordion-collapse collapse show"
+                    data-bs-parent="#accordionPanduan"
+                  >
+                    <div class="accordion-body">
+                      <p class="mb-3">
+                        Untuk membuat laporan baru, ikuti panduan praktis berikut:
+                      </p>
+                      <ol class="lh-lg mb-3">
+                        <li>Buka menu <strong>Semua Laporan</strong> pada navbar atas atau klik tombol <em>Buat Laporan</em>.</li>
+                        <li>Klik tombol <strong>+ Tambah Laporan</strong> di kanan atas halaman.</li>
+                        <li>
+                          Isi <strong>Judul Laporan</strong> secara singkat, padat, dan jelas (contoh: <em>"Lampu Kelas 11 B Mati"</em>).
+                        </li>
+                        <li>Pilih <strong>Kategori</strong> yang sesuai (<em>Akademik</em>, <em>Fasilitas</em>, atau <em>Anonymous</em>).</li>
+                        <li>Tuliskan <strong>Isi Laporan</strong> yang memuat lokasi tepat, kronologi kejadian, dan dampak kendala.</li>
+                        <li>Unggah foto pendukung pada bagian <strong>Upload Gambar</strong> (format JPG, PNG, atau JPEG).</li>
+                        <li>Periksa kembali data Anda, lalu klik tombol biru <strong>Kirim Laporan</strong>.</li>
+                      </ol>
+                      <div class="alert alert-info py-2 px-3 small mb-0 border-0">
+                        <i class="fa-solid fa-circle-info me-1"></i>
+                        <strong>Tips:</strong> Menyertakan foto yang jelas akan mempercepat proses verifikasi dan perbaikan oleh petugas.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Item 2: Cara mencari & memfilter -->
+                <div class="accordion-item shadow-sm">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="collapseTwo"
+                    >
+                      <i class="fa-solid fa-magnifying-glass text-primary me-2"></i>
+                      Bagaimana cara mencari atau memfilter daftar laporan?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseTwo"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionPanduan"
+                  >
+                    <div class="accordion-body">
+                      <p class="mb-2">
+                        Di halaman <strong>Semua Laporan (reports.html)</strong>, tersedia fitur pencarian dan filter untuk menemukan laporan secara cepat:
+                      </p>
+                      <ul class="lh-lg mb-3">
+                        <li><strong>Kolom Pencarian:</strong> Ketikkan kata kunci masalah, misalnya <em>"AC"</em>, <em>"kursi"</em>, atau nama lokasi.</li>
+                        <li><strong>Filter Kategori:</strong> Pilih kategori yang ingin disaring (Akademik, Fasilitas, atau Anonymous).</li>
+                        <li><strong>Urutan Waktu:</strong> Pilih opsi <em>"Terbaru"</em> untuk melihat laporan terkini atau <em>"Terlama"</em>.</li>
+                        <li>Klik tombol <strong>Filter</strong> untuk menerapkan kriteria pencarian Anda.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Item 3: Cara melihat detail -->
+                <div class="accordion-item shadow-sm">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree"
+                      aria-expanded="false"
+                      aria-controls="collapseThree"
+                    >
+                      <i class="fa-solid fa-file-lines text-primary me-2"></i>
+                      Bagaimana cara melihat detail lengkap suatu laporan?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseThree"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionPanduan"
+                  >
+                    <div class="accordion-body">
+                      <p class="mb-2">
+                        Setiap kartu laporan memiliki tombol <strong>Selengkapnya...</strong>. Klik tombol tersebut untuk:
+                      </p>
+                      <ul class="lh-lg mb-0">
+                        <li>Melihat gambar dokumentasi ukuran penuh dari barang atau lokasi yang dilaporkan.</li>
+                        <li>Membaca narasi kronologi secara utuh tanpa terpotong.</li>
+                        <li>Melihat nama pelapor (jika non-anonymous) serta waktu laporan dipublikasikan.</li>
+                        <li>Mengecek respon dan tindakan yang telah diambil oleh pengelola.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Item 4: Fitur Anonymous -->
+                <div class="accordion-item shadow-sm">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseFour"
+                      aria-expanded="false"
+                      aria-controls="collapseFour"
+                    >
+                      <i class="fa-solid fa-shield-halved text-primary me-2"></i>
+                      Apakah identitas saya aman saat memilih kategori Anonymous?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseFour"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionPanduan"
+                  >
+                    <div class="accordion-body">
+                      <p class="lh-lg mb-0">
+                        <strong>Ya, sepenuhnya aman.</strong> Kategori Anonymous disiapkan khusus untuk melindungi keamanan dan kenyamanan pelapor dalam menyampaikan laporan yang bersifat sensitif atau rahasia. Pada kartu laporan dan detail publik, nama Anda tidak akan dipublikasikan.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Item 5: Waktu proses -->
+                <div class="accordion-item shadow-sm">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseFive"
+                      aria-expanded="false"
+                      aria-controls="collapseFive"
+                    >
+                      <i class="fa-solid fa-clock-rotate-left text-primary me-2"></i>
+                      Berapa lama laporan saya akan diproses dan ditindaklanjuti?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseFive"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionPanduan"
+                  >
+                    <div class="accordion-body">
+                      <p class="lh-lg mb-0">
+                        Laporan umum diverifikasi dan ditindaklanjuti dalam rentang <strong>1 hingga 3 hari kerja</strong>. Untuk perbaikan fasilitas fisik atau pengadaan komponen baru, tim pengelola akan mengupdate status penanganan berkala pada sistem IDN E-Report.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 4: Etika & Tips Melapor (Do's & Don'ts) -->
+      <section class="py-5 bg-light border-top border-bottom">
+        <div class="container">
+          <div class="text-center mb-5" data-aos="fade-up">
+            <span class="text-primary fw-bold text-uppercase small tracking-wide">Ketentuan & Etika</span>
+            <h2 class="fw-bold text-primary-emphasis mt-1">Tips & Etika Penyampaian Laporan</h2>
+            <p class="text-secondary col-md-8 mx-auto">
+              Mari bersama menjaga lingkungan pelaporan yang sehat, santun, dan bermanfaat bagi seluruh civitas IDN.
+            </p>
+          </div>
+
+          <div class="row g-4">
+            <!-- Yang Dianjurkan (Do's) -->
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="card h-100 border-0 shadow-sm p-4 rounded-4 guide-tip-card border-top border-success border-4">
+                <div class="d-flex align-items-center gap-2 text-success fw-bold mb-3">
+                  <i class="fa-solid fa-circle-check fs-4"></i>
+                  <h5 class="mb-0 fw-bold">Yang Sangat Dianjurkan (Do's)</h5>
+                </div>
+                <ul class="text-secondary small lh-lg ps-3 mb-0">
+                  <li>Gunakan bahasa Indonesia yang santun, objektif, dan mudah dimengerti.</li>
+                  <li>Sebutkan lokasi spesifik (misal: <em>Lantai 2, Ruang Kelas 11 RPL</em>).</li>
+                  <li>Lampirkan foto bukti kondisi terkini yang jelas dan tidak buram.</li>
+                  <li>Pilih kategori yang tepat sesuai permasalahan yang dialami.</li>
+                  <li>Periksa apakah laporan serupa sudah pernah dikirimkan oleh orang lain sebelumnya.</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Yang Dihindari (Don'ts) -->
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+              <div class="card h-100 border-0 shadow-sm p-4 rounded-4 guide-tip-card border-top border-danger border-4">
+                <div class="d-flex align-items-center gap-2 text-danger fw-bold mb-3">
+                  <i class="fa-solid fa-circle-xmark fs-4"></i>
+                  <h5 class="mb-0 fw-bold">Yang Harus Dihindari (Don'ts)</h5>
+                </div>
+                <ul class="text-secondary small lh-lg ps-3 mb-0">
+                  <li>Dilarang mengirimkan laporan palsu, fiktif, fitnah, atau hoaks.</li>
+                  <li>Hindari kata-kata bernada kebencian, provokasi, atau perundungan (bullying).</li>
+                  <li>Hindari mengunggah gambar yang tidak ada hubungannya dengan pengaduan.</li>
+                  <li>Jangan melakukan spamming dengan mengirim laporan yang sama berulang kali.</li>
+                  <li>Jangan mempublikasikan data pribadi orang lain tanpa izin.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 5: Call to Action (CTA) -->
+      <section class="py-5">
+        <div class="container" data-aos="zoom-in">
+          <div class="bg-primary text-white p-5 rounded-4 shadow text-center position-relative overflow-hidden">
+            <div class="position-relative" style="z-index: 2;">
+              <h2 class="fw-bold mb-3">Sudah Memahami Panduan Ini?</h2>
+              <p class="lead opacity-90 col-md-8 mx-auto mb-4 fs-6">
+                Mari berkontribusi aktif dalam meningkatkan kualitas dan kenyamanan lingkungan IDN. Laporkan kendala atau sampaikan aspirasi Anda sekarang juga.
+              </p>
+              <div class="d-flex justify-content-center flex-wrap gap-3">
+                <a href="reports.html" class="btn btn-light text-primary fw-bold px-4 py-2 rounded-pill shadow-sm">
+                  <i class="fa-solid fa-plus-circle me-1"></i> Mulai Buat Laporan
+                </a>
+                <a
+                  href="https://wa.me/6287688579035"
+                  target="_blank"
+                  class="btn btn-outline-light px-4 py-2 rounded-pill"
+                >
+                  <i class="fa-brands fa-whatsapp me-1"></i> Kontak Tim Bantuan
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="bg-primary-subtle border-top mt-0">
+      <div class="container">
+        <div class="row py-5 row-gap-4 justify-content-between">
+          <div class="col-md-4 text-primary">
+            <div class="d-flex gap-2 align-items-center mb-2">
+              <img
+                class="d-inline-block rounded"
+                width="30"
+                src="./assets/images/WhatsApp_Image_2026-07-24_at_14.22.43__1_-removebg-preview.png"
+                alt="Logo"
+              />
+              <h3 class="mb-0 fw-bold">E-Report IDN</h3>
+            </div>
+            <p class="lh-lg opacity-75 small">
+              Platform pelaporan digital terpadu untuk menyajikan data secara cepat, akurat, dan transparan. Akses laporan harian serta evaluasi kinerja Anda dengan lebih efisien di sini.
+            </p>
+          </div>
+          <div class="col-md-2 text-primary d-flex flex-column gap-2">
+            <h4 class="fw-bold mb-2">Menu</h4>
+            <a class="text-decoration-none opacity-75 small text-primary" href="index.html#hero">Home</a>
+            <a class="text-decoration-none opacity-75 small text-primary" href="index.html#About">About</a>
+            <a class="text-decoration-none opacity-75 small text-primary" href="index.html#service">Service</a>
+            <a class="text-decoration-none opacity-75 small text-primary" href="index.html#Recent">Recent</a>
+            <a class="text-decoration-none opacity-75 small text-primary" href="index.html#faq">FAQ</a>
+            <a class="text-decoration-none opacity-75 small text-primary fw-bold" href="panduan.html">Guide</a>
+          </div>
+          <div class="col-md-4 text-primary d-flex flex-column gap-2">
+            <h4 class="fw-bold mb-2">Contact Us</h4>
+            <a class="d-flex align-items-center gap-3 text-decoration-none opacity-75 small text-primary" href="mailto:IDNE-Report@gmail.com">
+              <i class="fa-solid fa-envelope"></i>
+              IDN E-Report@gmail.com
+            </a>
+            <a target="_blank" class="d-flex align-items-center gap-3 text-decoration-none opacity-75 small text-primary" href="https://wa.me/6287688579035">
+              <i class="fa-brands fa-square-whatsapp"></i>
+              +62 87688579035
+            </a>
+            <a class="d-flex align-items-center gap-3 text-decoration-none opacity-75 small text-primary" href="https://maps.app.goo.gl/UmWWE4W1KmAoBgdd8">
+              <i class="fa-solid fa-location-dot"></i>
+              Jl. Al-Ikhlas, Bekasi Utara, Kota Bekasi
+            </a>
+          </div>
+        </div>
+        <div class="copyright text-primary text-center pt-3 border-top border-primary-subtle">
+          <p class="small mb-0">&copy; Copyright by <span class="fw-bold">RPL B</span> 2026, All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- js bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+      integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- js aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800,
+        once: true
+      });
+    </script>
+  </body>
+</html>

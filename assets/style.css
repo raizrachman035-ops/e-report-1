@@ -41,3 +41,64 @@ footer {
      width: 75%;
      }
 }
+
+/* Guide Page Specific Styling */
+.step-card {
+     transition: transform 0.25s ease, box-shadow 0.25s ease;
+     border-radius: 1rem;
+}
+
+.step-card:hover {
+     transform: translateY(-4px);
+     box-shadow: 0 0.75rem 1.5rem rgba(13, 110, 253, 0.12) !important;
+}
+
+.step-number {
+     width: 44px;
+     height: 44px;
+     border-radius: 50%;
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+     font-weight: 700;
+     font-size: 1.15rem;
+}
+
+.guide-badge {
+     display: inline-flex;
+     align-items: center;
+     gap: 0.5rem;
+     padding: 0.45rem 1rem;
+     border-radius: 50rem;
+     font-size: 0.875rem;
+     font-weight: 600;
+}
+
+.guide-accordion .accordion-item {
+     border: 1px solid rgba(13, 110, 253, 0.15);
+     border-radius: 0.75rem !important;
+     overflow: hidden;
+     margin-bottom: 1rem;
+}
+
+.guide-accordion .accordion-button {
+     font-weight: 600;
+     border-radius: 0.75rem !important;
+     padding: 1.1rem 1.25rem;
+}
+
+.guide-accordion .accordion-button:not(.collapsed) {
+     background-color: #e7f1ff;
+     color: #052c65;
+     box-shadow: none;
+}
+
+.guide-accordion .accordion-body {
+     padding: 1.25rem 1.5rem;
+     line-height: 1.7;
+}
+
+.guide-tip-card {
+     border-radius: 0.85rem;
+}
+
